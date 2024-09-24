@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import Navbar from './NAvbar';
+import Navbar from './Navbar';
 import L, { icon } from 'leaflet';
 import io from 'socket.io-client';
 import iconRetinaUrl from 'leaflet/dist/images/marker-icon-2x.png';

@@ -1,9 +1,9 @@
-import { Link } from 'react-router-dom'; // {{ edit_1 }}
+import { Link } from 'react-router-dom'; 
 
 const Navbar = () => {
     return (
       <div>
-          <div className="nav-bar">
+          <div className="nav-bar flex justify-between items-center p-4 bg-gray-800 text-white">
               {/* logo div */}
               <Link to="/">
               <div><p className="hospo-logo">hospo</p></div></Link>
