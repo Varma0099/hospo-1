@@ -26,7 +26,7 @@ function TrackDelivery() {
             setmelong(position.coords.longitude);
         })
 
-        const socketIo = io('https://hospo.onrender.com'); 
+        const socketIo = io('https://hospo-164o.onrender.com'); 
         socketIo.emit("mylocation",melat,melong)
 
         socketIo.on('deliveryLocationUpdate', (data) => {
