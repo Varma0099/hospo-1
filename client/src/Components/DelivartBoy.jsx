@@ -7,7 +7,7 @@ function DeliveryBoy() {
     const [data,setdata]=useState({lat:"",lng:""})
 
     useEffect(() => {
-        const socketIo = io('https://hospo.onrender.com');
+        const socketIo = io('https://hospo-164o.onrender.com');
         socketIo.on("customerloc",(log,lat)=>{
             setdata({lat:lat,lng:log})
         })
