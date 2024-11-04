@@ -88,7 +88,7 @@ function Meeting() {
         }
 
     if(localStorage.getItem("delivery")){
-        axios.post("https://hospo-164o.onrender.com/delivery", {
+        axios.post("https://hospo.onrender.com/delivery", {
             name:localStorage.getItem("name"),
             email:localStorage.getItem("email")
         })
