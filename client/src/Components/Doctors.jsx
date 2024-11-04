@@ -21,9 +21,10 @@ function Doctors() {
                   "id": 1,
                   "name": "Dr. Jatin Jaydev",
                   "description": "Cardiologist with 10 years of experience.",
-                  "email":"jatin.batchu@kalvium.community",
+                  "email":"vinnugollakoti289@gmail.com",
                   "image": "https://media.licdn.com/dms/image/v2/D5603AQFXf2O2E8ZUOw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723775958106?e=1732752000&v=beta&t=nuxuA3anGSLXX_8A7fJLKirAiUzP7p2Qatx6Dx9fl-U"
                 },
+                
                 {
                   "id": 2,
                   "name": "Dr. Jane Smith",
