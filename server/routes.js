@@ -8,8 +8,8 @@ const Delivery = require("./Delivarys")
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'mohanavamsi14@gmail.com',
-        pass: 'wken sosx ofjc cqvu'
+        user: '99220040822@klu.ac.in',
+        pass: 'xtzy aneh plut htny'
     }
 });
 router.get("/medcards", async (req, res) => {
@@ -38,7 +38,7 @@ router.post("/register", async (req, res) => {
     console.log(req.body);
 
     const mailOptions = {
-        from: 'mohanavamsi14@gmail.com',
+        from: '99220040822@klu.ac.in',
         to: doctorId,
         subject: 'New Registration',
         html: `
@@ -58,7 +58,7 @@ router.post("/register", async (req, res) => {
                 </ul>
                 <p>And the id:</p><b>${email.split("@")[0]}</b>
                 <p style="font-size: 16px; color: #555;">If you'd like to confirm, please use the link below:</p>
-                <a href="https://hospo.onrender.com/conform/${email}/${phone}" style="display: inline-block; padding: 10px 15px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px;">Confirm Booking</a>
+                <a href="http://localhost:6001/conform/${email}/${phone}" style="display: inline-block; padding: 10px 15px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px;">Confirm Booking</a>
                 <a href="https://chayoo.vercel.app/video" style="display: inline-block; padding: 10px 15px; background-color: #009bff; color: white; text-decoration: none; border-radius: 5px;"> &#xF21F; Meeting Link</a>
                 <p style="font-size: 16px; color: #555; margin-top: 20px;">And here is your <a href="https://chayoo.vercel.app/video" style="color: #007bff;">meeting link</a>.</p>
             </div>
@@ -81,7 +81,7 @@ router.get("/conform/:email/:phone", async (req, res) => {
     const { email, phone } = req.params;
     try {
         const mailOptions = {
-            from: 'mohanavamsi14@gmail.com',
+            from: '99220040822@klu.ac.in',
             to: email,
             subject: 'Booking Confirmed',
             html: `
@@ -119,7 +119,7 @@ router.post("/delivery", async (req, res) => {
         const savedDelivery = await newDelivery.save();
 
         const mailOptions = {
-            from: 'mohanavamsi14@gmail.com', 
+            from: '99220040822@klu.ac.in', 
             to: email,                    
             subject: 'Delivery Status Update',
             html: `

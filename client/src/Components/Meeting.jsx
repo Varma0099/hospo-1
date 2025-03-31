@@ -4,7 +4,7 @@ import { useParams, useNavigate } from 'react-router';
 import io from 'socket.io-client';  
 import axios from "axios"
 
-const socket = io("https://hospo.onrender.com");
+const socket = io("http://localhost:6001");
 
 function Meeting() {
     const [stream, setStream] = useState();
@@ -88,7 +88,7 @@ function Meeting() {
         }
 
     if(localStorage.getItem("delivery")){
-        axios.post("https://hospo.onrender.com/delivery", {
+        axios.post("http://localhost:6001/delivery", {
             name:localStorage.getItem("name"),
             email:localStorage.getItem("email")
         })

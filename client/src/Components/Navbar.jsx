@@ -10,11 +10,11 @@ const Navbar = () => {
             {/* middle buttons nav div  */}
             <div className="nav-bar-1">
                 <Link to="/doctors"><p className="nav-btn">Doctors</p></Link>
-                <Link to="/error"><p className="nav-btn">About</p></Link>
-                <Link to="/error"><p className="nav-btn">Our&nbsp;services</p></Link>
+                <Link to="/about"><p className="nav-btn">About</p></Link>
+                <Link to="/services"><p className="nav-btn">Our&nbsp;services</p></Link>
                 <Link to="/delivary"><p className="nav-btn">Delivery</p></Link>
                 <Link to="/track"><p className="nav-btn">Track</p></Link>
-                <Link to="/error"><p className="nav-btn">Contact</p></Link>
+                <Link to="/contact"><p className="nav-btn">Contact</p></Link>
                 
             </div>
             {/* get in touch div */}

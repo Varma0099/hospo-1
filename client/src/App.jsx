@@ -10,6 +10,8 @@ import DeliveryBoy from "./Components/DelivartBoy"
 import TrackDelivery from "./Components/Track"
 import Docmet from "./doctor meet"
 import Glitch from "./Components/Glitch"
+import Services from "./Components/Services"
+import About from "./Components/About"
 
 const App = () => {
   localStorage.setItem("delivery",false)
@@ -18,6 +20,8 @@ const App = () => {
 
       <Route path="/" element={<Home/>}/>
       <Route path="/doctors" element={<Doctors/>}/>
+      <Route path="/services" element={<Services />} />
+      <Route path="/about" element={<About />} />
       <Route path="/medcardreg/:doctorId" element={<MedCardReg/>}/>
       <Route path="/meeting/:userid" element={<Meeting/>}/>
       <Route path="/delivary" element={<DeliveryBoy/>}/>
